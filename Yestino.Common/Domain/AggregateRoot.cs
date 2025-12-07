@@ -19,7 +19,7 @@ public abstract class AggregateRoot : Entity<Guid>
     [NotMapped] public IReadOnlyList<DomainEvent> DomainEvents => _domainEvents;
     public void ClearDomainEvents() => _domainEvents.Clear();
 
-    protected void RaiseDomainEvent(DomainEvent domainEvent)
+    public void RaiseDomainEvent(DomainEvent domainEvent)
     {
         _domainEvents.Add(domainEvent);
     }

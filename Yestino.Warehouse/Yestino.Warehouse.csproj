@@ -10,6 +10,7 @@
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.10" />
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
       <PackageReference Include="WolverineFx.EntityFrameworkCore" Version="5.0.0" />
+      <PackageReference Include="WolverineFx.Http" Version="5.0.0" />
       <PackageReference Include="WolverineFx.Postgresql" Version="5.0.0" />
     </ItemGroup>
 
@@ -23,6 +24,7 @@
       <ProjectReference Include="..\Yestino.Common\Yestino.Common.csproj" />
       <ProjectReference Include="..\Yestino.ProductCatalogContracts\Yestino.ProductCatalogContracts.csproj" />
       <ProjectReference Include="..\Yestino.WarehouseContracts\Yestino.WarehouseContracts.csproj" />
+      <ProjectReference Include="..\Yestino.OrderingContracts\Yestino.OrderingContracts.csproj" />
     </ItemGroup>
 
 </Project>

@@ -7,7 +7,7 @@ public class Order : AggregateRoot
 {
     public DateTimeOffset CreateAt { get; private set; }
     public string CustomerAddress { get; private set; }
-    public OrderStatus Status { get; private set; }
+    public OrderStatus Status { get; internal set; }
 
     private readonly List<OrderItem> _items = [];
     public IReadOnlyList<OrderItem> Items => _items;
