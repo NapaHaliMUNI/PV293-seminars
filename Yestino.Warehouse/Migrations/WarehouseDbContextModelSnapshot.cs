@@ -115,6 +115,23 @@ namespace Yestino.Warehouse.Migrations
                             t.ExcludeFromMigrations();
                         });
                 });
+
+            modelBuilder.Entity("Yestino.Warehouse.Entities.WarehouseProduct", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("ProductId")
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("WarehouseProducts", "warehouse");
+                });
 #pragma warning restore 612, 618
         }
     }
